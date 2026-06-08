@@ -1,0 +1,7 @@
+class Solution(object):
+    def missingNumber(self, nums):
+        n=len(nums)
+        gnum=(n*(n+1))//2
+        snum=sum(nums)
+        i=gnum-snum
+        return i
