@@ -1,0 +1,10 @@
+class Solution(object):
+    def hammingDistance(self, x, y):
+        a=x^y
+        cout=0
+        while a !=0:
+            b=a&1
+            a>>=1
+            if b==1:
+                cout+=1
+        return cout
